@@ -106,7 +106,7 @@ def create_dataloader(path,
                       pad=0.0,
                       rect=False,
                       rank=-1,
-                      workers=8,
+                      workers=12,
                       image_weights=False,
                       close_mosaic=False,
                       quad=False,
@@ -1196,7 +1196,7 @@ def create_classification_dataloader(path,
                                      augment=True,
                                      cache=False,
                                      rank=-1,
-                                     workers=8,
+                                     workers=12,
                                      shuffle=True):
     # Returns Dataloader object to be used with YOLOv5 Classifier
     with torch_distributed_zero_first(rank):  # init dataset *.cache only once if DDP

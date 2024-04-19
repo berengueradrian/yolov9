@@ -1,0 +1,5 @@
+/runs
+/weights/*
+!/weights/download_weights.sh
+__pycache__/
+/utils/__pycache__/
